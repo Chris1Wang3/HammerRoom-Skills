@@ -64,4 +64,4 @@ npx clawhub@latest install requirement-review-simulator
 
 ## 作者
 
-Chris Wang
+Chris Wang ([@Chris1Wang3](https://github.com/Chris1Wang3))
