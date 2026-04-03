@@ -4,7 +4,7 @@ description: >-
   Product manager skill collection: competitive product research (8-dimension benchmarking
   with HTML report) and PRD review simulator (5-role stress-test with survival scoring).
   产品经理通用技能合集：竞品调研专家（8维度对标分析HTML报告）、需求评审模拟器（五方攻防推演存活率评分）。
-version: 5.1.0
+version: 1.0.0
 ---
 
 # Jiaye-Skills
