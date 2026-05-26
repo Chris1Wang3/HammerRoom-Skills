@@ -1,5 +1,5 @@
 {
-  "name": "requirement-review-simulator",
+  "name": "pm-requirement-review-simulator",
   "version": "1.0.0",
   "tagline": "Stress-test your PRD with 5-role simulated review meetings",
   "description": "PRD review stress-test simulator for product managers. Five cross-functional roles (engineering, operations, design, executive, legal) challenge your product requirements with realistic pushback. Choose from 3 difficulty levels: Rookie (gentle), Realistic (big-tech standard), or Hell Mode (all hostile). Outputs a scored HTML survival report with 5-dimension radar chart, counterargument playbook, RACI matrix, meeting script, and action checklist.",

@@ -6,7 +6,7 @@
 
 ## What It Does
 
-Describe your product requirement and choose a difficulty level. The agent simulates a **cross-functional review meeting** where 5 roles — Engineering, Operations, Design, Executive, and Legal — each challenge your PRD with role-specific concerns and speaking styles. It then generates a **themed HTML report** (Business Blue / Black Gold / Minimal White) with:
+Describe your product requirement and choose a difficulty level. The agent simulates a **cross-functional review meeting** where 5 roles — Engineering, Operations, Design, Executive, and Legal — each challenge your PRD with role-specific concerns and speaking styles. It then generates a **light-blue themed HTML report** (Qieman-style hero + white cards + SVG gauge & radar) with:
 
 - **Survival Score** — deterministic scoring engine (per-item 0/1/2 weighted formula), not vibes
 - **5-Dimension Radar Chart** — visual breakdown of strengths and fatal weaknesses
@@ -40,21 +40,23 @@ Submit requirement → Info collection checklist → 5-role challenge + scoring 
 
 1. **Input**: identify requirement type (major feature / tool / MVP / iteration / compliance) + PRD source
 2. **Processing**: 5 roles challenge by persona, per-item scoring, weight normalization, survival rate
-3. **Output**: generate 9-section HTML report (3 themes)
+3. **Output**: generate 11-section HTML report (light-blue Qieman-style theme)
 
 ## Report Sections
 
 | # | Section | Description |
 |---|---------|-------------|
-| 1 | Cover | Requirement overview, grade badge, decision label |
-| 2 | Survival Score | 5-dimension radar + fatal flaws + lifelines |
-| 3 | Decision Gates | Value/risk/resource/strategy gates + A/B/C comparison |
-| 4 | Challenge Log | Per-role questions sorted by fatal/major/minor |
-| 5 | Killer Replies TOP 3 | Normal vs killer reply + technique analysis |
-| 6 | Collaboration Pack | RACI matrix + conflict identification & resolution |
-| 7 | Meeting Script | Opening, core argument, risk plan, decision, close |
-| 8 | Optimization Suggestions | Must-fix / optional / defer |
-| 9 | Action Checklist | Owner + deadline + deliverable + review checkpoint |
+| 1 | Hero | Requirement overview, grade badge, decision label |
+| 2 | Radial Hub | Survival gauge + 5-dimension radar chart |
+| 3 | Callouts | Fatal Flaw / Lifeline highlights |
+| 4 | Decision Gates + A/B/C Plans | Value/risk/resource/strategy gates + option comparison |
+| 5 | Five-Role Challenge Board | Per-role questions sorted by fatal/major/minor |
+| 6 | Killer Replies TOP 3 | Normal vs killer reply + technique analysis |
+| 7 | Cross-Team Collaboration | RACI matrix + conflict identification & resolution |
+| 8 | Review Meeting Script | Opening, core argument, risk plan, decision, close |
+| 9 | Optimization Suggestions | Must-fix / optional / defer |
+| 10 | Action Checklist | Owner + deadline + deliverable + review checkpoint |
+| 11 | Disclaimer | AI-generated notice + scope of advice |
 
 ## File Structure
 
@@ -64,7 +66,7 @@ Submit requirement → Info collection checklist → 5-role challenge + scoring 
 | `references/user_templates.md` | User input templates (general + industry add-ons) |
 | `references/scoring-engine-deterministic.md` | Deterministic scoring engine (weights, items, tiers, exemptions) |
 | `references/review-playbook.md` | Role challenge handbook (personas + scripts + meeting flow) |
-| `references/report-template-pro.html` | HTML report template (3 themes + 9 sections) |
+| `references/report-template-pro.html` | HTML report template (light-blue hero, 11 sections) |
 
 ## Install
 

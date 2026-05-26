@@ -1,12 +1,11 @@
 ---
-
-## name: competitive-product-research
+name: competitive-product-research
 description: >-
   Competitive product research skill for structured benchmarking and strategic differentiation.
   Uses an original dual-track method (experience benchmarking + strategic diagnostics),
   and outputs source-traceable, execution-oriented HTML reports.
   竞品调研技能：采用原创双轨方法（体验对标 + 战略诊断），输出可追溯、可执行的 HTML 报告。
-version: 1.3.1
+---
 
 # 竞品调研（Competitive Product Research）
 
@@ -148,7 +147,7 @@ version: 1.3.1
 使用 `references/report-template.html`，默认分区（顺序不可打乱）：
 
 1. Hero（调研目标、一句话结论、结论标签）
-2. Stats Row（产品数 / 发现数 / Pattern 数 / 行动项数）
+2. KPI Strip（产品数 / 发现数 / Pattern 数 / 行动项数）
 3. Callouts（Top Insight / Priority Action）
 4. Research Scope + Source Coverage
 5. Summary Conclusions

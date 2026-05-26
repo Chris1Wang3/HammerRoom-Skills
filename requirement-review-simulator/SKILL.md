@@ -4,7 +4,6 @@ description: >-
   PRD review stress-test simulator: 5 cross-functional roles challenge your requirements
   across 3 difficulty levels, outputs a scored HTML survival report with radar chart and meeting script.
   当用户需要评审产品需求文档(PRD)、模拟需求评审会议、或预演跨部门博弈时使用。以需求评审攻防推演为核心，模拟技术/运营/设计/老板/法务五方挑战；具备"新手/实战/地狱"三级残酷度；输出质疑清单、应对话术、存活率评分卡和标准会议资产。
-version: 1.0.0
 ---
 
 # 产品经理需求评审模拟器
