@@ -61,7 +61,7 @@ description: >-
 7️⃣ 技术栈 / 实现方式：[已提取 / 待补充]
 8️⃣ 资源现实（时间/预算/弱项）：[已提取 / 待补充]
 9️⃣ 约束条件（上线期限/跑道）：[已提取 / 待补充]
-🔟 报告格式：📊 专业版（可视化 HTML）← 默认 / 📝 精简版（Markdown）
+🔟 报告格式：📝 标准版（Markdown）← 默认 / 📊 专业版（可视化 HTML）
 ```
 
 ### 按身份调整采集重点
@@ -101,7 +101,7 @@ description: >-
 
 ## 输出
 
-**默认输出 HTML 专业报告**，严格按照 [report-template-pro.html](references/report-template-pro.html) 的结构和样式生成，含：
+默认按 [report-template-markdown.md](references/report-template-markdown.md) 输出 Markdown 评估报告，含：
 
 1. 可行性评分卡（五维得分 + 综合分 + 评级 + 致命死穴 + 救命稻草）
 2. 决策结论 + 决策闸门 + A/B/C 方案对比
@@ -112,7 +112,7 @@ description: >-
 7. OPC 决策卡（✅ 独立完成 / ⚠️ 找外援 / ❌ 砍掉 + 3周/6周/3月时间盒）
 8. 优化建议 + 行动清单
 
-用户选择「精简版」时，按 [report-template-markdown.md](references/report-template-markdown.md) 输出 Markdown 评估报告。
+用户选择「专业版」时，按 [report-template-pro.html](references/report-template-pro.html) 模板生成可视化 HTML 报告。
 
 模板报告 section 顺序（依次填充，不可打乱）：
 1. Hero（项目名、摘要、评级）
