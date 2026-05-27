@@ -1,8 +1,8 @@
 {
   "name": "competitive-product-research",
-  "version": "1.3.1",
+  "version": "1.3.8",
   "tagline": "original dual-track competitive research skill",
-  "description": "Your team is copying competitors feature by feature. What you need is structured analysis that tells you what to copy, what to leapfrog, and what to skip. CPR uses an original dual-track method — experience benchmarking (8 UX dimensions) + strategic diagnostics (SWOT, Five Forces, PESTLE) — and outputs source-traceable, execution-ready HTML reports with action items, owners, and priority ratings. 竞品调研不应是观点合集。双轨四层法，体验+策略同时跑，每条建议都有动作、责任人、复杂度，输出可直接进评审会的 HTML 报告。",
+  "description": "Your team is copying competitors feature by feature. What you need is structured analysis that tells you what to copy, what to leapfrog, and what to skip. CPR uses an original dual-track method — experience benchmarking (8 UX dimensions) + strategic diagnostics (SWOT, Five Forces, PESTLE) — and starts with source-traceable quick findings plus a completion checklist before producing execution-ready HTML reports when review materials are needed. 竞品调研不应是观点合集。双轨四层法，体验+策略同时跑，默认先给可追溯的轻量结论和补充清单，再根据用户补充输出带动作、责任人、复杂度的完整 HTML 报告。",
   "category": "productivity",
   "tags": ["product-management", "competitive-analysis", "ux-research", "benchmarking", "html-report", "product-strategy", "chinese"],
   "license": "MIT",
