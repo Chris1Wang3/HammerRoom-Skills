@@ -11,3 +11,4 @@ yarn.lock
 .DS_Store
 Thumbs.db
 *.log
+.cursor/

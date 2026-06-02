@@ -1,6 +1,6 @@
-**中文** · [English](./README.en.md)
-
 <div align="center">
+
+**中文** · [English](./README.en.md)
 
 # 🪑 拍砖间 · HammerRoom Skills
 
@@ -25,9 +25,9 @@
 
 | # | 技能 | 说明 | ClawHub |
 |---|------|------|---------|
-| 1 | [一人董事会（OPC Board）](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.3.6](https://clawhub.ai/Chris1Wang3/opc-board) |
-| 2 | [竞品调研（CPR）](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.1](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
-| 3 | [PM 需求评审模拟器](#pm-requirement-review-simulator) | 五角色攻防推演 + 存活率报告 | [ClawHub v1.2.3](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
+| 1 | 🏛️ [**一人董事会（OPC Board）**](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.3.6](https://clawhub.ai/Chris1Wang3/opc-board) |
+| 2 | 🔍 [**竞品调研（CPR）**](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.1](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
+| 3 | ⚔️ [**PM 需求评审模拟器**](#pm-requirement-review-simulator) | 五角色攻防推演 + 存活率报告 | [ClawHub v1.2.3](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
 
 ---
 
@@ -63,7 +63,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <tr>
 <td valign="top" width="100%">
 
-<h3>一人董事会 · OPC Board</h3>
+<h3>🏛️ 一人董事会 · OPC Board</h3>
 
 <p>
 <a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.3.6-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
@@ -73,7 +73,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 
 <ul>
 <li>适用：独立开发者、开源作者、早期创业者、内容创作者上线前自检</li>
-<li>输出：专业评估报告 + OPC 决策卡</li>
+<li>输出：专业HTML评估报告 + OPC 决策卡</li>
 <li>文档：<a href="opc-board/SKILL.md">SKILL.md</a> · <a href="opc-board/README-zh.md">README-zh</a> · <a href="opc-board/README.md">README-en</a></li>
 </ul>
 
@@ -89,7 +89,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <tr>
 <td valign="top" width="100%">
 
-<h3>竞品调研 · Competitive Product Research</h3>
+<h3>🔍 竞品调研 · Competitive Product Research</h3>
 
 <p>
 <a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.1-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
@@ -99,7 +99,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 
 <ul>
 <li>适用：对标分析、差异化策略、评审会前竞品材料、漏斗 / 转化问题诊断</li>
-<li>输出：专业 HTML 竞品报告（非观点合集）</li>
+<li>输出：专业 HTML 竞品调研报告</li>
 <li>文档：<a href="competitive-product-research/SKILL.md">SKILL.md</a> · <a href="competitive-product-research/README-zh.md">README-zh</a> · <a href="competitive-product-research/README.md">README-en</a></li>
 </ul>
 
@@ -115,7 +115,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <tr>
 <td valign="top" width="100%">
 
-<h3>PM 需求评审模拟器</h3>
+<h3>⚔️ PM 需求评审模拟器</h3>
 
 <p>
 <a href="https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator"><img src="https://img.shields.io/badge/ClawHub-v1.2.3-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
@@ -125,7 +125,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 
 <ul>
 <li>适用：需求评审前压测、跨部门博弈预演、会议资产准备</li>
-<li>输出：HTML 存活率报告 + 会议脚本</li>
+<li>输出：专业HTML 需求评审报告</li>
 <li>文档：<a href="pm-requirement-review-simulator/SKILL.md">SKILL.md</a> · <a href="pm-requirement-review-simulator/README-zh.md">README-zh</a> · <a href="pm-requirement-review-simulator/README.md">README-en</a></li>
 </ul>
 
@@ -141,13 +141,13 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 
 ```text
 # 一人董事会
-帮我评审一下我做的 AI 周报 SaaS，实战模式。
+我想做一个记账类微信小程序，帮我分析一下可行性。
 
 # 竞品调研
 我们 App 发帖转化率只有 3%，请对标小红书和 Instagram，分析发帖首链路问题。
 
 # 需求评审
-帮我评审会员体系 2.0 需求，实战模式。
+评审一下这个prd：https://www.woshipm.com/evaluating/4069331.html。
 ```
 
 也可对任一技能说「用示例跑一下」，Agent 将按 SKILL 工作流构造示例输入并生成报告。
@@ -158,7 +158,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 
 **Chris Wang**（[@Chris1Wang3](https://github.com/Chris1Wang3)）
 
-产品 / 增长背景，专注把「会议里才会出现的专业质疑」封装成可复用的 Agent Skills，输出可交付的报告与决策资产。问题与建议请提 [GitHub Issues](https://github.com/Chris1Wang3/HammerRoom-Skills/issues)。
+AI产品，负责增长/商业化，专注把「会议里才会出现的专业质疑」封装成可复用的 Agent Skills，输出可交付的报告与决策资产。问题与建议请提 [GitHub Issues](https://github.com/Chris1Wang3/HammerRoom-Skills/issues)。
 
 ---
 
