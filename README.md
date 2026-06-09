@@ -4,12 +4,12 @@
 
 # 🪑 拍砖间 · HammerRoom Skills
 
-**拍砖间** — 一人董事会 · 竞品调研 · 需求评审模拟器
+**拍砖间** — 一人董事会 · 竞品调研 · 需求评审模拟器 · 技能质量评分器
 
 <br/>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-3-22c55e?style=flat-square)](#技能)
+[![Skills](https://img.shields.io/badge/Skills-4-22c55e?style=flat-square)](#技能)
 [![Agent Skills](https://img.shields.io/badge/Agent-Skills-8b5cf6?style=flat-square)](https://agentskills.io)
 <br/>
 [![Claude Code](https://img.shields.io/badge/Claude_Code-✓-d97706?style=flat-square&logo=anthropic&logoColor=white)](https://claude.ai/code)
@@ -28,6 +28,7 @@
 | 1 | 🏛️ [**一人董事会（OPC Board）**](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.3.6](https://clawhub.ai/Chris1Wang3/opc-board) |
 | 2 | 🔍 [**竞品调研（CPR）**](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.1](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
 | 3 | ⚔️ [**PM 需求评审模拟器**](#pm-requirement-review-simulator) | 五角色攻防推演 + 存活率报告 | [ClawHub v1.2.3](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
+| 4 | 📊 [**技能质量评分器**](#skill-quality-scorer) | TRACE+ 六维 30 子项确定性评分 | [ClawHub v1.1.7](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
 
 ---
 
@@ -39,6 +40,7 @@
 openclaw skills install opc-board
 openclaw skills install competitive-product-research
 openclaw skills install pm-requirement-review-simulator
+openclaw skills install skill-quality-scorer
 ```
 
 或从 [ClawHub · Chris1Wang3](https://clawhub.ai/Chris1Wang3) 安装对应技能包。
@@ -133,6 +135,32 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 </tr>
 </table>
 
+<br/>
+
+<a id="skill-quality-scorer"></a>
+
+<table width="100%">
+<tr>
+<td valign="top" width="100%">
+
+<h3>📊 技能质量评分器 · Skill Quality Scorer</h3>
+
+<p>
+<a href="https://clawhub.ai/Chris1Wang3/skill-quality-scorer"><img src="https://img.shields.io/badge/ClawHub-v1.1.7-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+</p>
+
+<p><strong>迭代没方向、发布前没底——你需要的是确定性评分，不是模型随口夸。</strong> 对现有 Agent Skill（SKILL.md）做 <strong>TRACE+ 六维 30 子项</strong>全维审计：先跑 <code>static_audit.py</code> 静态脚本，再按 rubric 逐项 evidence，公式算综合分；支持单技能、A vs B 对比、批量评分，输出 JSON + Markdown 报告。</p>
+
+<ul>
+<li>适用：技能迭代对标、发布前自检、批量评 <code>skills/</code> 目录、和同类 skill 找差距</li>
+<li>输出：JSON 评分 + Markdown 审计报告（含 Top 修复项与触发测试）</li>
+<li>文档：<a href="skill-quality-scorer/SKILL.md">SKILL.md</a></li>
+</ul>
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## 快速开始
@@ -148,6 +176,9 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 
 # 需求评审
 评审一下这个prd：https://www.woshipm.com/evaluating/4069331.html。
+
+# 技能质量评分
+给 portfolio-doctor 做 TRACE+ 全维评分，和 skill-reviewer 差在哪？
 ```
 
 也可对任一技能说「用示例跑一下」，Agent 将按 SKILL 工作流构造示例输入并生成报告。

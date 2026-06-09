@@ -4,12 +4,12 @@
 
 # 🪑 HammerRoom Skills · 拍砖间
 
-**HammerRoom** — OPC Board · Competitive Product Research · PM Requirement Review Simulator
+**HammerRoom** — OPC Board · Competitive Product Research · PM Requirement Review Simulator · Skill Quality Scorer
 
 <br/>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-3-22c55e?style=flat-square)](#skills)
+[![Skills](https://img.shields.io/badge/Skills-4-22c55e?style=flat-square)](#skills)
 [![Agent Skills](https://img.shields.io/badge/Agent-Skills-8b5cf6?style=flat-square)](https://agentskills.io)
 <br/>
 [![Claude Code](https://img.shields.io/badge/Claude_Code-✓-d97706?style=flat-square&logo=anthropic&logoColor=white)](https://claude.ai/code)
@@ -28,6 +28,7 @@
 | 1 | 🏛️ [**OPC Board**](#opc-board) | Five-dimension stress-test for solo business ideas | [ClawHub v1.3.6](https://clawhub.ai/Chris1Wang3/opc-board) |
 | 2 | 🔍 [**Competitive Product Research**](#competitive-product-research) | Dual-track benchmarking + strategic diagnostics | [ClawHub v1.4.1](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
 | 3 | ⚔️ [**PM Requirement Review Simulator**](#pm-requirement-review-simulator) | Five-role PRD review with survival scoring | [ClawHub v1.2.3](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
+| 4 | 📊 [**Skill Quality Scorer**](#skill-quality-scorer) | TRACE+ six-dimension deterministic scoring | [ClawHub v1.1.7](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
 
 ---
 
@@ -39,6 +40,7 @@
 openclaw skills install opc-board
 openclaw skills install competitive-product-research
 openclaw skills install pm-requirement-review-simulator
+openclaw skills install skill-quality-scorer
 ```
 
 Or install from [ClawHub · Chris1Wang3](https://clawhub.ai/Chris1Wang3).
@@ -133,6 +135,32 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 </tr>
 </table>
 
+<br/>
+
+<a id="skill-quality-scorer"></a>
+
+<table width="100%">
+<tr>
+<td valign="top" width="100%">
+
+<h3>📊 Skill Quality Scorer</h3>
+
+<p>
+<a href="https://clawhub.ai/Chris1Wang3/skill-quality-scorer"><img src="https://img.shields.io/badge/ClawHub-v1.1.7-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+</p>
+
+<p><strong>No direction on iteration, no confidence before publish — you need deterministic scoring, not model flattery.</strong> Full <strong>TRACE+ six-dimension, 30 sub-item</strong> audit for existing Agent Skills (SKILL.md): run <code>static_audit.py</code> first, then rubric evidence per sub-item, formula composite score; supports single skill, A vs B comparison, and batch scoring — outputs JSON + Markdown report.</p>
+
+<ul>
+<li>Use cases: skill iteration benchmarking, pre-publish self-check, batch scoring <code>skills/</code>, gap analysis vs peer skills</li>
+<li>Output: JSON score + Markdown audit report (with top fixes and trigger tests)</li>
+<li>Docs: <a href="skill-quality-scorer/SKILL.md">SKILL.md</a></li>
+</ul>
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## Quick start
@@ -148,6 +176,9 @@ Our app post conversion rate is only 3%. Compare with Xiaohongshu and Instagram 
 
 # Requirement review
 Review this PRD: https://www.woshipm.com/evaluating/4069331.html
+
+# Skill quality scoring
+Score portfolio-doctor with TRACE+ — where does it fall short vs skill-reviewer?
 ```
 
 You can also say "run with an example" for any skill — the agent will construct sample input per the SKILL workflow and generate a report.
