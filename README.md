@@ -76,7 +76,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <ul>
 <li>适用：独立开发者、开源作者、早期创业者、内容创作者上线前自检</li>
 <li>输出：专业HTML评估报告 + OPC 决策卡</li>
-<li>文档：<a href="opc-board/SKILL.md">SKILL.md</a> · <a href="opc-board/README-zh.md">README-zh</a> · <a href="opc-board/README.md">README-en</a></li>
+<li>文档：<a href="opc-board/SKILL.md">SKILL.md</a></li>
 </ul>
 
 </td>
@@ -102,7 +102,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <ul>
 <li>适用：对标分析、差异化策略、评审会前竞品材料、漏斗 / 转化问题诊断</li>
 <li>输出：专业 HTML 竞品调研报告</li>
-<li>文档：<a href="competitive-product-research/SKILL.md">SKILL.md</a> · <a href="competitive-product-research/README-zh.md">README-zh</a> · <a href="competitive-product-research/README.md">README-en</a></li>
+<li>文档：<a href="competitive-product-research/SKILL.md">SKILL.md</a></li>
 </ul>
 
 </td>
@@ -128,7 +128,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <ul>
 <li>适用：需求评审前压测、跨部门博弈预演、会议资产准备</li>
 <li>输出：专业HTML 需求评审报告</li>
-<li>文档：<a href="pm-requirement-review-simulator/SKILL.md">SKILL.md</a> · <a href="pm-requirement-review-simulator/README-zh.md">README-zh</a> · <a href="pm-requirement-review-simulator/README.md">README-en</a></li>
+<li>文档：<a href="pm-requirement-review-simulator/SKILL.md">SKILL.md</a></li>
 </ul>
 
 </td>

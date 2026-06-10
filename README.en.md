@@ -76,7 +76,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <ul>
 <li>Use cases: indie developers, open-source authors, early founders, content creators pre-launch self-check</li>
 <li>Output: professional HTML feasibility report + OPC Decision Card</li>
-<li>Docs: <a href="opc-board/SKILL.md">SKILL.md</a> · <a href="opc-board/README-zh.md">README-zh</a> · <a href="opc-board/README.md">README-en</a></li>
+<li>Docs: <a href="opc-board/SKILL.md">SKILL.md</a></li>
 </ul>
 
 </td>
@@ -102,7 +102,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <ul>
 <li>Use cases: benchmarking, differentiation strategy, pre-review competitive materials, funnel / conversion diagnosis</li>
 <li>Output: professional HTML competitive research report</li>
-<li>Docs: <a href="competitive-product-research/SKILL.md">SKILL.md</a> · <a href="competitive-product-research/README-zh.md">README-zh</a> · <a href="competitive-product-research/README.md">README-en</a></li>
+<li>Docs: <a href="competitive-product-research/SKILL.md">SKILL.md</a></li>
 </ul>
 
 </td>
@@ -128,7 +128,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <ul>
 <li>Use cases: pre-review stress-test, cross-functional rehearsal, meeting asset prep</li>
 <li>Output: professional HTML requirement review report</li>
-<li>Docs: <a href="pm-requirement-review-simulator/SKILL.md">SKILL.md</a> · <a href="pm-requirement-review-simulator/README-zh.md">README-zh</a> · <a href="pm-requirement-review-simulator/README.md">README-en</a></li>
+<li>Docs: <a href="pm-requirement-review-simulator/SKILL.md">SKILL.md</a></li>
 </ul>
 
 </td>
