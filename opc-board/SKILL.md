@@ -1,10 +1,7 @@
 ---
 name: opc-board
 description: >-
-  OPC Board — 5 professional advisors stress-test your solo business idea across 5 dimensions
-  (logic, deliverability, growth, business viability, risk), output a scored feasibility report
-  with Go/No-Go decision, MoSCoW scoping, Pre-Mortem risk classification, and action plan.
-  一人董事会——五位专业顾问五维压测想法可行性，输出带评分的专业评估报告和 Go/No-Go 决策。
+  OPC Board — 5 advisors stress-test your solo idea across 5 dimensions (logic, deliverability, growth, viability, risk), output a scored feasibility report with Go/No-Go decision.
   Use when evaluating a one-person company, side project, solo venture, or open-source project feasibility,
   or when the user says "帮我评审一下", "这个想法靠谱吗", "is this idea viable",
   "can I build this alone", "一个人能做出来吗", "值不值得做", "这个开源项目靠谱吗".
@@ -77,3 +74,20 @@ Say「用示例跑一下」/ "run with an example" for a demo input.
 - **文风**：去 AI 化；具名、具数、具动作
 - **优先级**：信息优先 > 评分引擎 > 报告模板 > 顾问灵魂
 - **合规**：免责声明；法律/金融/医疗仅风险提示，不替代表达合规方案
+
+**Rigid**（不可跳过）：
+- 25 子项逐项打分 · 公式计算综合分 · Go/Conditional/No Go 结论 · OPC 决策卡 · Pre-Mortem · 免责声明 · 信息采集清单先行
+
+**Flexible**（可按场景调整）：
+- 顾问人设话术风格 · 追问深度与轮次 · MoSCoW 条目数量 · 报告格式（Markdown/HTML）
+
+## 验收与失败路径
+
+- **清单追问**：≤3 轮未响应 → 标注缺失信息，跳过项保守分 1 继续
+- **顾问质疑**：每维≥3 条质疑；信息不足时给出假设并保守打分
+- **完成标准**：报告含所有 Rigid 项 + 综合分公式校验通过
+- **失败判定**：用户提供信息不足以判断任何一维（如仅提供名称无其他信息且拒绝补充）→ 告知无法出具有效评分
+
+## 运行时说明
+
+本 skill 无运行时脚本，工作流第 5 步（子项打分→权重归一化→综合分）由 LLM 读取 [scoring-engine-deterministic.md](references/scoring-engine-deterministic.md) 后自行计算执行。本 scoring-engine 为 OPC Board 专属评分引擎，与仓库中其他同名文件无关。

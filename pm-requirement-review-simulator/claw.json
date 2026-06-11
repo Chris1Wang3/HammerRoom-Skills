@@ -1,6 +1,6 @@
 {
   "name": "pm-requirement-review-simulator",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "tagline": "Stress-test your PRD with 5-role simulated review meetings / 需求评审模拟器：五角色攻防推演，输出存活率报告",
   "description": "PRD review stress-test simulator for product managers. Five cross-functional roles (engineering, operations, design, executive, legal) challenge your product requirements with realistic pushback. Choose from 3 difficulty levels: Rookie (gentle), Realistic (big-tech standard), or Hell Mode (all hostile). Outputs a scored HTML survival report with 5-dimension radar chart, counterargument playbook, RACI matrix, meeting script, and action checklist. 产品经理需求评审攻防推演模拟器。技术/运营/设计/老板/法务五角色，新手村/实战/地狱三级残酷度，确定性评分引擎逐子项打分，输出带雷达图的 HTML 存活率报告、神回复话术、RACI 协作包和会议脚本。",
   "category": "productivity",

@@ -1,13 +1,8 @@
 ---
 name: competitive-product-research
 description: >-
-  Competitive product research skill for structured benchmarking and strategic differentiation.
-  Uses an original dual-track method (experience benchmarking + strategic diagnostics),
-  collects sufficient context via a structured checklist before analysis,
-  then produces a source-traceable professional HTML report with actionable recommendations.
-  竞品调研技能：采用原创双轨方法（体验对标 + 战略诊断），先通过信息采集清单收集充分上下文，再输出证据可溯源的专业 HTML 报告。
-  Use when competitive analysis, benchmarking, differentiation strategy, SWOT, Porter's Five Forces, PESTLE,
-  or when the user says「竞品调研」「对标分析」「和 XX 比差在哪」.
+  Dual-track competitive research: experience benchmarking (8 UX dimensions) + strategic diagnostics (SWOT/Five Forces/PESTLE), source-traceable HTML report.
+  Use when competitive analysis, benchmarking, differentiation strategy, or when the user says「竞品调研」「对标分析」「和 XX 比差在哪」.
 ---
 
 # 竞品调研 · Competitive Product Research
@@ -62,3 +57,27 @@ Our app post conversion is 3% — benchmark Xiaohongshu vs Instagram, first-post
 - **证据**：关键结论至少一个 `SRC-xxx`；体验轨与策略轨不重复
 - **输出**：具名、具数、具动作；必有执行建议
 - **优先级**：信息优先 > 格式锁 > playbook > 文风护栏
+
+**Rigid**（不可跳过）：
+- SRC-xxx 证据标注 · 信息采集清单先行（用户说「跳过」才可省略）· 报告必含对标表 + Key Findings + 路线图 + Source Index + 免责声明
+
+**Flexible**（可按场景调整）：
+- 战略模块选择（格局/SWOT/五力/PESTLE 按需求 N/A）· 体验八维可合并相近维度 · 报告格式外的补充附录
+
+## 验收与失败路径
+
+- **清单追问**：≤3 轮未响应 → 标注缺失信息，以保守假设继续
+- **完成标准**：报告含 Rigid 必含项 + ≥1 个 SRC-xxx/关键结论 + 路线图有 Owner/优先级
+- **失败判定**：核心对标对象 <2 且无法通过公开信息补全 → 明确告知用户无法完成
+
+## 运行时说明
+
+本 skill 无运行时脚本，工作流由 LLM 执行。
+
+## 参考文件
+
+| 文件 | 内容 |
+|------|------|
+| [references/research-playbook.md](references/research-playbook.md) | 双轨四层法详规 · 格式锁 · 自检 |
+| [references/report-template-pro.html](references/report-template-pro.html) | HTML 报告模板 |
+| [references/factual-reporting-and-style.md](references/factual-reporting-and-style.md) | 文风护栏 · 事实性报道准则 |

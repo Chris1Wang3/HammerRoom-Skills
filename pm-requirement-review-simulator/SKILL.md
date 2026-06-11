@@ -3,7 +3,8 @@ name: pm-requirement-review-simulator
 description: >-
   PRD review stress-test simulator: 5 cross-functional roles challenge your requirements
   across 3 difficulty levels, outputs a scored HTML survival report with radar chart and meeting script.
-  当用户需要评审产品需求文档(PRD)、模拟需求评审会议、或预演跨部门博弈时使用。以需求评审攻防推演为核心，模拟技术/运营/设计/老板/法务五方挑战；具备"新手/实战/地狱"三级残酷度；输出质疑清单、应对话术、存活率评分卡和标准会议资产。
+  Use when PRD review, requirement review simulation, or cross-functional pushback rehearsal,
+  or when the user says「评审需求」「模拟评审会」「帮我预演一下」.
 ---
 
 # PM 需求评审模拟器 · Requirement Review Simulator
@@ -67,6 +68,28 @@ Review our group-buying feature. Realistic mode.
 - **评分**：25 子项逐项；禁止凭感觉；必须有 Go 结论；残酷度确认后不降级
 - **优先级**：信息优先 > 评分引擎 > 报告模板 > 角色灵魂
 - **合规**：免责声明；专业领域提醒咨询持牌人士
+
+**Rigid**（不可跳过）：
+- 25 子项逐项打分 · 存活率公式计算 · Go/Conditional/No Go 结论 · 残酷度确认后不降级 · 杀手回复 TOP3 · RACI · 免责声明
+
+**Flexible**（可按场景调整）：
+- 角色话术措辞风格 · 质疑排序 · 会议脚本详略 · 行动清单条目数量
+
+## N/A 维度规则
+
+N/A 维度须在信息采集清单第 11 项确认，不可在评审中途自行降维。确认后该维子项不参与总分计算，公式分母相应减少。
+
+## 验收与失败路径
+
+- **清单追问**：≤3 轮未响应 → 标注缺失信息，跳过项保守分 1 继续
+- **残酷度**：确认后不降级；用户明确要求降级须重新确认
+- **角色质疑**：每角色≥2 条质疑（地狱模式≥4 条）；信息不足时以保守假设质疑
+- **完成标准**：存活率≥70% 为 Conditional Pass；≥85% 为 Pass；<50% 为 Fail
+- **失败判定**：核心功能描述完全缺失且用户拒绝补充 → 告知无法有效评审
+
+## 运行时说明
+
+本 skill 无运行时脚本，工作流第 5 步（子项打分→存活率）由 LLM 读取 [scoring-engine-deterministic.md](references/scoring-engine-deterministic.md) 后自行计算执行。本 scoring-engine 为 PM 需求评审模拟器专属评分引擎，与仓库中其他同名文件无关。
 
 ## 参考文件
 
