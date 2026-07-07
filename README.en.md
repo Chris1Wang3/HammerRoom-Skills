@@ -25,7 +25,7 @@
 
 | # | Skill | Summary | ClawHub |
 |---|-------|---------|---------|
-| 1 | 🏛️ [**OPC Board**](#opc-board) | Five-dimension stress-test for solo business ideas | [ClawHub v1.3.9](https://clawhub.ai/Chris1Wang3/opc-board) |
+| 1 | 🏛️ [**OPC Board**](#opc-board) | Five-dimension stress-test for solo business ideas | [ClawHub v1.4.0](https://clawhub.ai/Chris1Wang3/opc-board) |
 | 2 | 🔍 [**Competitive Product Research**](#competitive-product-research) | Dual-track benchmarking + strategic diagnostics | [ClawHub v1.4.4](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
 | 3 | ⚔️ [**PM Requirement Review Simulator**](#pm-requirement-review-simulator) | Five-role PRD review with survival scoring | [ClawHub v1.2.6](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
 | 4 | 📊 [**Skill Quality Scorer**](#skill-quality-scorer) | TRACE+ six-dimension deterministic scoring | [ClawHub v1.1.8](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
@@ -68,7 +68,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🏛️ OPC Board</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.3.9-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.4.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>Friends say sounds great; AI says wonderful idea — you need someone willing to push back.</strong> OPC Board convenes 5 professional advisors (tech / growth / experience / business / risk) to stress-test solo ventures, side projects, open-source ideas, or SaaS concepts across <strong>5 dimensions and 25 sub-items</strong> with formula-based scoring, Go / Conditional Go / No Go decisions, MoSCoW scoping, Pre-Mortem risks, and an action plan.</p>

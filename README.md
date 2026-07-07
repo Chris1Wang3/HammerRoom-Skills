@@ -25,7 +25,7 @@
 
 | # | 技能 | 说明 | ClawHub |
 |---|------|------|---------|
-| 1 | 🏛️ [**一人董事会（OPC Board）**](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.3.9](https://clawhub.ai/Chris1Wang3/opc-board) |
+| 1 | 🏛️ [**一人董事会（OPC Board）**](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.4.0](https://clawhub.ai/Chris1Wang3/opc-board) |
 | 2 | 🔍 [**竞品调研（CPR）**](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.4](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
 | 3 | ⚔️ [**PM 需求评审模拟器**](#pm-requirement-review-simulator) | 五角色攻防推演 + 存活率报告 | [ClawHub v1.2.6](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
 | 4 | 📊 [**技能质量评分器**](#skill-quality-scorer) | TRACE+ 六维 30 子项确定性评分 | [ClawHub v1.1.8](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
@@ -68,7 +68,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🏛️ 一人董事会 · OPC Board</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.3.9-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.4.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>朋友说「不错」，AI 说 wonderful idea——你真正需要的是愿意拍砖的人。</strong> 一人董事会召集 5 位专业顾问（技术 / 增长 / 体验 / 商业 / 风险），对一人公司、副业、开源或 SaaS 想法进行<strong>五维 25 子项</strong>确定性压测，输出带公式的可行性评分、Go / Conditional Go / No Go 决策、MoSCoW 范围、Pre-Mortem 风险与行动清单。</p>
