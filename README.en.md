@@ -25,10 +25,10 @@
 
 | # | Skill | Summary | ClawHub |
 |---|-------|---------|---------|
-| 1 | 🏛️ [**OPC Board**](#opc-board) | Five-dimension stress-test for solo business ideas | [ClawHub v1.3.6](https://clawhub.ai/Chris1Wang3/opc-board) |
-| 2 | 🔍 [**Competitive Product Research**](#competitive-product-research) | Dual-track benchmarking + strategic diagnostics | [ClawHub v1.4.1](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
-| 3 | ⚔️ [**PM Requirement Review Simulator**](#pm-requirement-review-simulator) | Five-role PRD review with survival scoring | [ClawHub v1.2.3](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
-| 4 | 📊 [**Skill Quality Scorer**](#skill-quality-scorer) | TRACE+ six-dimension deterministic scoring | [ClawHub v1.1.7](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
+| 1 | 🏛️ [**OPC Board**](#opc-board) | Five-dimension stress-test for solo business ideas | [ClawHub v1.3.9](https://clawhub.ai/Chris1Wang3/opc-board) |
+| 2 | 🔍 [**Competitive Product Research**](#competitive-product-research) | Dual-track benchmarking + strategic diagnostics | [ClawHub v1.4.4](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
+| 3 | ⚔️ [**PM Requirement Review Simulator**](#pm-requirement-review-simulator) | Five-role PRD review with survival scoring | [ClawHub v1.2.6](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
+| 4 | 📊 [**Skill Quality Scorer**](#skill-quality-scorer) | TRACE+ six-dimension deterministic scoring | [ClawHub v1.1.8](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
 
 ---
 
@@ -68,7 +68,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🏛️ OPC Board</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.3.6-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.3.9-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>Friends say sounds great; AI says wonderful idea — you need someone willing to push back.</strong> OPC Board convenes 5 professional advisors (tech / growth / experience / business / risk) to stress-test solo ventures, side projects, open-source ideas, or SaaS concepts across <strong>5 dimensions and 25 sub-items</strong> with formula-based scoring, Go / Conditional Go / No Go decisions, MoSCoW scoping, Pre-Mortem risks, and an action plan.</p>
@@ -94,7 +94,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🔍 Competitive Product Research</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.1-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.4-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>Competitive analysis should not be a feature checklist.</strong> This skill uses an original <strong>dual-track four-layer method</strong>: experience benchmarking (8 UX dimensions) and strategic diagnostics (SWOT, Porter's Five Forces, PESTLE) in parallel; a structured intake checklist aligns context first, then produces a <strong>source-traceable</strong> professional HTML report with actions, owners, complexity, and evidence IDs.</p>
@@ -120,7 +120,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>⚔️ PM Requirement Review Simulator</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator"><img src="https://img.shields.io/badge/ClawHub-v1.2.3-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator"><img src="https://img.shields.io/badge/ClawHub-v1.2.6-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>Rehearse before the real review — cheaper than getting roasted in the meeting.</strong> Simulates engineering, ops, design, executive, and legal challenges to your PRD; supports <strong>Rookie / Realistic / Hell</strong> difficulty; deterministic scoring outputs an HTML survival report with a <strong>five-dimension radar chart</strong>, killer replies, RACI pack, meeting script, and action list.</p>
@@ -146,7 +146,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>📊 Skill Quality Scorer</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/skill-quality-scorer"><img src="https://img.shields.io/badge/ClawHub-v1.1.7-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/skill-quality-scorer"><img src="https://img.shields.io/badge/ClawHub-v1.1.8-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>No direction on iteration, no confidence before publish — you need deterministic scoring, not model flattery.</strong> Full <strong>TRACE+ six-dimension, 30 sub-item</strong> audit for existing Agent Skills (SKILL.md): run <code>static_audit.py</code> first, then rubric evidence per sub-item, formula composite score; supports single skill, A vs B comparison, and batch scoring — outputs JSON + Markdown report.</p>
