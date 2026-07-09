@@ -4,12 +4,12 @@
 
 # 🪑 HammerRoom Skills · 拍砖间
 
-**HammerRoom** — OPC Board · Competitive Product Research · PM Requirement Review Simulator · Skill Quality Scorer
+**HammerRoom** — OPC Board · Competitive Product Research · PM Requirement Review Simulator · Vague Requirement Unpacker · Skill Quality Scorer
 
 <br/>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-4-22c55e?style=flat-square)](#skills)
+[![Skills](https://img.shields.io/badge/Skills-5-22c55e?style=flat-square)](#skills)
 [![Agent Skills](https://img.shields.io/badge/Agent-Skills-8b5cf6?style=flat-square)](https://agentskills.io)
 <br/>
 [![Claude Code](https://img.shields.io/badge/Claude_Code-✓-d97706?style=flat-square&logo=anthropic&logoColor=white)](https://claude.ai/code)
@@ -28,7 +28,8 @@
 | 1 | 🏛️ [**OPC Board**](#opc-board) | Five-dimension stress-test for solo business ideas | [ClawHub v1.4.0](https://clawhub.ai/Chris1Wang3/opc-board) |
 | 2 | 🔍 [**Competitive Product Research**](#competitive-product-research) | Dual-track benchmarking + strategic diagnostics | [ClawHub v1.4.4](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
 | 3 | ⚔️ [**PM Requirement Review Simulator**](#pm-requirement-review-simulator) | Five-role PRD review with survival scoring | [ClawHub v1.2.6](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
-| 4 | 📊 [**Skill Quality Scorer**](#skill-quality-scorer) | TRACE+ six-dimension deterministic scoring | [ClawHub v1.1.8](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
+| 4 | 🧩 [**Vague Requirement Unpacker**](#vague-requirement-unpacker) | Vague ask -> PM alignment pack | [ClawHub v1.0.0](https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker) |
+| 5 | 📊 [**Skill Quality Scorer**](#skill-quality-scorer) | TRACE+ six-dimension deterministic scoring | [ClawHub v1.1.8](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
 
 ---
 
@@ -40,6 +41,7 @@
 openclaw skills install opc-board
 openclaw skills install competitive-product-research
 openclaw skills install pm-requirement-review-simulator
+openclaw skills install vague-requirement-unpacker
 openclaw skills install skill-quality-scorer
 ```
 
@@ -137,6 +139,32 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 
 <br/>
 
+<a id="vague-requirement-unpacker"></a>
+
+<table width="100%">
+<tr>
+<td valign="top" width="100%">
+
+<h3>🧩 Vague Requirement Unpacker</h3>
+
+<p>
+<a href="https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker"><img src="https://img.shields.io/badge/ClawHub-v1.0.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+</p>
+
+<p><strong>A vague ask is not a finished PRD.</strong> This skill uses a five-layer unpacking method to turn fuzzy boss or business instructions into intent reconstruction, confirmation questions, scenario narrowing, scope skeletons, core flows/states, readiness scoring, risk flags, and stakeholder-facing response scripts.</p>
+
+<ul>
+<li>Use cases: vague boss/business asks, oral tasks, chat screenshots, one-line meeting notes, blank PRD before alignment</li>
+<li>Output: Markdown / HTML PM action pack, with optional handoff to requirement review simulation</li>
+<li>Docs: <a href="vague-requirement-unpacker/SKILL.md">SKILL.md</a></li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
 <a id="skill-quality-scorer"></a>
 
 <table width="100%">
@@ -176,6 +204,9 @@ Our app post conversion rate is only 3%. Compare with Xiaohongshu and Instagram 
 
 # Requirement review
 Review this PRD: https://www.woshipm.com/evaluating/4069331.html
+
+# Vague requirement unpacking
+My boss said new customer conversion is weak and asked whether we can add benefit incentives. Help me turn this into confirmation questions and an alignment skeleton.
 
 # Skill quality scoring
 Score portfolio-doctor with TRACE+ — where does it fall short vs skill-reviewer?

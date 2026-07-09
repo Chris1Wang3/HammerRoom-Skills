@@ -4,12 +4,12 @@
 
 # 🪑 拍砖间 · HammerRoom Skills
 
-**拍砖间** — 一人董事会 · 竞品调研 · 需求评审模拟器 · 技能质量评分器
+**拍砖间** — 一人董事会 · 竞品调研 · 需求评审模拟器 · 模糊需求接招器 · 技能质量评分器
 
 <br/>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-4-22c55e?style=flat-square)](#技能)
+[![Skills](https://img.shields.io/badge/Skills-5-22c55e?style=flat-square)](#技能)
 [![Agent Skills](https://img.shields.io/badge/Agent-Skills-8b5cf6?style=flat-square)](https://agentskills.io)
 <br/>
 [![Claude Code](https://img.shields.io/badge/Claude_Code-✓-d97706?style=flat-square&logo=anthropic&logoColor=white)](https://claude.ai/code)
@@ -28,7 +28,8 @@
 | 1 | 🏛️ [**一人董事会（OPC Board）**](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.4.0](https://clawhub.ai/Chris1Wang3/opc-board) |
 | 2 | 🔍 [**竞品调研（CPR）**](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.4](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
 | 3 | ⚔️ [**PM 需求评审模拟器**](#pm-requirement-review-simulator) | 五角色攻防推演 + 存活率报告 | [ClawHub v1.2.6](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
-| 4 | 📊 [**技能质量评分器**](#skill-quality-scorer) | TRACE+ 六维 30 子项确定性评分 | [ClawHub v1.1.8](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
+| 4 | 🧩 [**模糊需求接招器**](#vague-requirement-unpacker) | 模糊指令 -> PM 对齐行动包 | [ClawHub v1.0.0](https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker) |
+| 5 | 📊 [**技能质量评分器**](#skill-quality-scorer) | TRACE+ 六维 30 子项确定性评分 | [ClawHub v1.1.8](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
 
 ---
 
@@ -40,6 +41,7 @@
 openclaw skills install opc-board
 openclaw skills install competitive-product-research
 openclaw skills install pm-requirement-review-simulator
+openclaw skills install vague-requirement-unpacker
 openclaw skills install skill-quality-scorer
 ```
 
@@ -137,6 +139,32 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 
 <br/>
 
+<a id="vague-requirement-unpacker"></a>
+
+<table width="100%">
+<tr>
+<td valign="top" width="100%">
+
+<h3>🧩 模糊需求接招器 · Vague Requirement Unpacker</h3>
+
+<p>
+<a href="https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker"><img src="https://img.shields.io/badge/ClawHub-v1.0.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+</p>
+
+<p><strong>模糊方向，不等于可以直接开写 PRD。</strong> 模糊需求接招器用原创<strong>五层接招法</strong>，把老板/业务的模糊指令拆成意图还原、确认问题、场景收敛、边界骨架、流程状态、接招就绪度和风险红旗，输出能回话、能开会对齐、能继续开写的 PM 行动包。</p>
+
+<ul>
+<li>适用：老板/业务模糊方向、口头任务、微信截图、会议纪要短句、评审前 PRD 空白</li>
+<li>输出：Markdown / HTML 接招包，可 handoff 到需求评审模拟器</li>
+<li>文档：<a href="vague-requirement-unpacker/SKILL.md">SKILL.md</a></li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
 <a id="skill-quality-scorer"></a>
 
 <table width="100%">
@@ -177,6 +205,9 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 # 需求评审
 评审一下这个prd：https://www.woshipm.com/evaluating/4069331.html。
 
+# 模糊需求接招
+老板说：最近新客转化不太好，看看能不能搞点权益激励。我现在只有这句话，帮我先拆成能跟老板确认的问题和方案骨架。
+
 # 技能质量评分
 给 portfolio-doctor 做 TRACE+ 全维评分，和 skill-reviewer 差在哪？
 ```
@@ -202,4 +233,3 @@ Made by [@Chris1Wang3](https://github.com/Chris1Wang3)
 </div>
 
 <br/>
-
