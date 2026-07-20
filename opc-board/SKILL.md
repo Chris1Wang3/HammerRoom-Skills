@@ -3,7 +3,7 @@ name: opc-board
 description: >-
   OPC Board — 5 advisors stress-test your solo idea across 5 dimensions (logic, deliverability, growth, viability, risk), output a scored feasibility report with Go/No-Go decision.
   Use when evaluating a one-person company, side project, solo venture, or open-source project feasibility,
-  or when the user says "帮我评审一下", "这个想法靠谱吗", "is this idea viable",
+  or when the user says "这个一人项目靠谱吗", "这个想法靠谱吗", "is this idea viable",
   "can I build this alone", "一个人能做出来吗", "值不值得做", "这个开源项目靠谱吗".
 ---
 
@@ -44,7 +44,7 @@ Say「用示例跑一下」/ "run with an example" for a demo input.
 
 - 只有一句话：先提炼定位、用户、目标和核心假设，再输出采集清单。
 - 只有产品名：不足以评分，先追问一句“它解决谁的什么问题”。
-- 用户说“直接生成”：用保守假设继续，缺失项按 1 分处理并标注 evidence。
+- 用户说“直接生成”：只跳过业务信息追问，用保守假设继续，缺失项按 1 分处理并标注 evidence；**不视为跳过输出格式确认**。
 - 非盈利/开源项目：商业可持续维度按开源/社区维护替代子项评分，不直接判 0。
 
 ## 工作流
@@ -68,6 +68,13 @@ Say「用示例跑一下」/ "run with an example" for a demo input.
 7️⃣ 技术栈  8️⃣ 资源现实  9️⃣ 约束条件  🔟 报告格式（📊HTML / 📝Markdown）
 ```
 
+**采集交互（优先使用可操作表单）**：
+
+- **必须复用** [assets/intake-form.html](assets/intake-form.html)，不得临时重写表单 UI。
+- 通过 `prefill` URL 参数注入 URI 编码 JSON；推断值不得冒充确认值，输出格式保持未选。
+- 宿主支持时内嵌，否则复制资产并用浏览器打开；提交后读取回传或用户粘贴的结构化参数。回传统一使用 `{schema_version:"1.0", skill, action, data}`；优先 `window.codex.submitForm`，兼容 `window.openai.sendFollowUpMessage`，最后复制 JSON。
+- 仅当 HTML 无法使用时退回文本清单；格式未确认不得生成，用户明确委托默认时使用 HTML。
+
 按身份追加：开发者→MVP/技术栈；创作者→粉丝/复购；咨询师→交付物/报价。行业增量：电商 · B2B SaaS · 金融科技（合规一票否决）。
 
 ## 五顾问 × 五维
@@ -90,7 +97,7 @@ Say「用示例跑一下」/ "run with an example" for a demo input.
 | Markdown 快速版 | [report-template-markdown.md](references/report-template-markdown.md) |
 | 顾问人设/话术 | [soul.md](references/soul.md) |
 
-生成前先确认输出格式：`HTML` 或 `Markdown`。用户选择后再生成；用户跳过格式选择时，默认 HTML。
+按采集表确认的格式与对应模板生成；格式已明确时不重复询问。
 
 必含：评分卡 · Go/Conditional/No Go · 五顾问质疑 · Pre-Mortem · MoSCoW · OPC 决策卡 · 行动清单 · 免责声明。
 
@@ -131,3 +138,4 @@ Say「用示例跑一下」/ "run with an example" for a demo input.
 | [references/report-template-markdown.md](references/report-template-markdown.md) | Markdown 报告模板 |
 | [references/report-template-pro.html](references/report-template-pro.html) | HTML 专业报告模板 |
 | [references/soul.md](references/soul.md) | 五顾问人设与话术 |
+| [assets/intake-form.html](assets/intake-form.html) | 跨 Agent 可复用采集表 UI |

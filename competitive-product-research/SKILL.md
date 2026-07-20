@@ -44,7 +44,7 @@ Our app post conversion is 3% — benchmark Xiaohongshu vs Instagram, first-post
 - 一句话需求：先提炼目标、对象、场景，再给采集清单。
 - 截图/链接/碎片材料：先建证据索引，缺口标 `SRC-GAP`。
 - 中英混合或口语输入：保持用户原意，统一为调研参数。
-- 用户说“直接生成”：跳过追问，用保守假设继续，并在报告首屏标注假设。
+- 用户说“直接生成”：只跳过业务信息追问，用保守假设继续，并在报告首屏标注假设；**不视为跳过输出格式确认**。
 
 ## 工作流
 
@@ -63,6 +63,13 @@ Our app post conversion is 3% — benchmark Xiaohongshu vs Instagram, first-post
 9️⃣ 输出格式（HTML / Markdown）  🔟 约束条件
 ```
 
+**采集交互（优先使用可操作表单）**：
+
+- **必须复用** [assets/intake-form.html](assets/intake-form.html)，不得临时重写表单 UI。
+- 将上下文预填为 `prefill` URL 参数（URI 编码 JSON）；推断值不得伪装成用户确认值，输出格式保持未选。
+- 宿主支持内嵌 HTML 时直接展示；否则复制该资产到当前输出目录并用浏览器打开。提交后读取宿主回传或用户粘贴的结构化参数。回传统一使用 `{schema_version:"1.0", skill, action, data}`；优先 `window.codex.submitForm`，兼容 `window.openai.sendFollowUpMessage`，最后复制 JSON。
+- 仅当宿主无法展示或打开 HTML 时退回文本清单；格式未确认不得生成，用户明确委托默认时使用 HTML。
+
 ## 方法概要
 
 双轨四层法详规 → [research-playbook.md](references/research-playbook.md)
@@ -73,7 +80,7 @@ Our app post conversion is 3% — benchmark Xiaohongshu vs Instagram, first-post
 
 ## 输出
 
-生成前先确认输出格式：`HTML` 或 `Markdown`。用户选择 HTML 时，严格按 [report-template-pro.html](references/report-template-pro.html) 生成；用户选择 Markdown 时，按同一分区输出结构化 Markdown。用户跳过格式选择时，默认 HTML。格式锁、事实边界、文风、自检 → [research-playbook.md](references/research-playbook.md)。
+按采集表确认的格式生成：HTML 严格使用 [report-template-pro.html](references/report-template-pro.html)；Markdown 使用同一分区结构。格式锁、事实边界、文风、自检 → [research-playbook.md](references/research-playbook.md)。
 
 必含：对标表 · Key Findings · 路线图（Owner/优先级）· Source Index · 免责声明。对外分享须脱敏。
 
@@ -96,13 +103,12 @@ Our app post conversion is 3% — benchmark Xiaohongshu vs Instagram, first-post
 - **对标对象不足**：只有 1 个竞品 → 先询问补充；用户跳过则用我方/行业常见做法作参照并标注限制
 - **公开证据不足**：记录 `SRC-GAP`，不写具体数字，给下一步补证动作
 - **输入很碎**：先整理为调研参数和证据索引，再分析；不可因格式不标准拒绝
-- **格式选择**：生成前确认 HTML / Markdown；用户跳过则默认 HTML；快速版仍保留 Source Index 和免责声明
 - **完成标准**：报告含 Rigid 必含项 + ≥1 个 SRC-xxx/关键结论 + 路线图有 Owner/优先级
 - **失败判定**：无调研目标、无对标对象、也无法从上下文推断，且用户拒绝补充 → 明确告知无法出具有效报告
 
 ## 运行时说明
 
-本 skill 无运行时脚本，工作流由 LLM 执行。
+调研工作流由 LLM 执行。修改采集表后运行 `python tests/test_intake_form_contracts.py` 做全表单契约与渲染回归；竞品表单的深度交互回归仍可运行 `python competitive-product-research/scripts/test_intake_form.py`，需本地 Chrome 与 Python 包 `websocket-client`。
 
 ## 参考文件
 
@@ -110,3 +116,5 @@ Our app post conversion is 3% — benchmark Xiaohongshu vs Instagram, first-post
 |------|------|
 | [references/research-playbook.md](references/research-playbook.md) | 双轨四层法详规 · 事实边界 · 格式锁 · 自检 |
 | [references/report-template-pro.html](references/report-template-pro.html) | HTML 报告模板 |
+| [assets/intake-form.html](assets/intake-form.html) | 跨 Agent 可复用采集表 UI |
+| [scripts/test_intake_form.py](scripts/test_intake_form.py) | 本地 Chrome 表单回归测试 |

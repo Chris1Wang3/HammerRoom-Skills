@@ -55,7 +55,15 @@ description: >-
 
 **最低可启动：** 老板原话、业务口头方向、会议纪要短句或截图摘要。缺失信息必须标注为「待确认」，不可脑补成事实。
 
-推荐输入和示例见 [references/user_templates.md](references/user_templates.md)。用户可以说「直接生成」。此时默认：交付档位 L2、输出 Markdown、缺失项按待确认处理。
+**推荐输入：** 老板/业务原话、紧急程度、已知目标或意图、目标用户、核心场景、已知约束、明确不做什么、交付档位、输出格式、后续动作。
+
+**可兼容输入：**
+
+- 只有一句方向：先提炼可能意图和关键缺口，再展示采集清单。
+- 只有会议纪要或截图：先提取可见信息，无法确认的内容保持「待确认」。
+- 用户说「直接生成」：只跳过业务信息追问，默认建议 L2；**不视为跳过输出格式确认**。用户明确委托默认格式时才使用 Markdown。
+
+推荐输入和示例见 [references/user_templates.md](references/user_templates.md)。
 
 ## 交付档位
 
@@ -69,7 +77,7 @@ description: >-
 
 ```text
 1) 接收模糊原话
-2) 输出信息采集清单（预填 + 待补充 / 可跳过）
+2) 确认信息采集清单（预填 + 待确认 / 可跳过）
 3) Layer 0 模糊度判定 -> 选择 L1 / L2 / L3
 4) 按五层接招法展开
 5) 计算接招就绪度 + 风险红旗
@@ -77,6 +85,23 @@ description: >-
 ```
 
 执行细节见 [references/unpacking-playbook.md](references/unpacking-playbook.md)。
+
+### 信息采集清单（第 2 步）
+
+先预填上下文中的已知事实；未确认值统一标记「待确认」，不得以推断替代用户确认。
+
+```text
+1️⃣ 老板/业务原话  2️⃣ 紧急程度  3️⃣ 已知目标或可能意图  4️⃣ 目标用户/角色  5️⃣ 核心场景
+6️⃣ 已知约束  7️⃣ 明确不做什么  8️⃣ 交付档位（L1 / L2 / L3）  9️⃣ 输出格式（Markdown / HTML）  🔟 后续动作（仅接招包 / 继续评审预演）
+```
+
+**采集交互（优先使用可操作表单）：**
+
+- **必须复用** [assets/intake-form.html](assets/intake-form.html)，不得由 Agent 临时重写表单 UI；该文件是跨 Agent 稳定展示的唯一实现。
+- 通过 `prefill` URL 参数注入 URI 编码 JSON；原话、交付档位、输出格式为提交门槛，输出格式保持未选。紧急程度可预填；后续动作默认“仅接招包”。
+- 原话、意图、用户、场景、约束和不做范围允许编辑；档位、格式与后续动作使用单选。文本清单中的推断值必须标记 `[推断]`；表单预填内容在提交前不得视为已确认。
+- 宿主支持时内嵌表单并读取结构化回传；否则复制资产并用浏览器打开，用户粘贴结构化参数后继续。回传统一使用 `{schema_version:"1.0", skill, action, data}`；优先 `window.codex.submitForm`，兼容 `window.openai.sendFollowUpMessage`，最后复制 JSON。仅当 HTML 无法使用时，才退回 [references/user_templates.md](references/user_templates.md) 文本清单。
+- 提交按钮使用“确认清单并开始拆解”；确认后执行 Layer 0 判定，再按已选档位与格式生成。格式未确认不得生成；用户明确委托默认时使用 Markdown。
 
 ### 逐层门控
 
@@ -114,7 +139,7 @@ L1 默认输出 Layer 0-1；L2 默认输出 Layer 0-4；L3 默认输出 Layer 0-
 
 ## 输出
 
-按用户选择输出 `Markdown` 或 `HTML`；用户未选择时默认 `Markdown`。
+按采集表确认的格式输出 `Markdown` 或 `HTML`；格式已明确时不重复询问。用户明确委托默认时使用 `Markdown`。
 
 Markdown 直接按以下结构输出：
 ```text
@@ -146,6 +171,7 @@ HTML 输出必须使用本技能自己的 [references/report-template-pro.html](
 ## 硬约束
 
 - **信息优先**：禁止把缺失信息编成事实；所有推断必须标注「假设」。
+- **格式锁**：未确认输出格式不得生成完整接招包；仅用户明确委托默认时使用 Markdown。
 - **冷启动定位**：不要输出“可直接给研发排期”的终稿承诺。
 - **问题克制**：确认问题最多 7 个，先问能改变方向的问题。
 - **场景收敛**：核心场景最多 3 个；超过 3 个必须建议分期或收敛。
@@ -181,6 +207,7 @@ HTML 输出必须使用本技能自己的 [references/report-template-pro.html](
 | 文件 | 内容 |
 |---|---|
 | [references/scoring-engine-deterministic.md](references/scoring-engine-deterministic.md) | 接招就绪度评分规则 |
-| [references/unpacking-playbook.md](references/unpacking-playbook.md) | 五层接招执行细则 |
+| [references/unpacking-playbook.md](references/unpacking-playbook.md) | 模糊需求接招方法手册：五层展开 · 档位裁剪 · 输出细则 |
 | [references/report-template-pro.html](references/report-template-pro.html) | HTML 专业报告模板 |
 | [references/user_templates.md](references/user_templates.md) | 输入模板与示例 |
+| [assets/intake-form.html](assets/intake-form.html) | 跨 Agent 可复用采集表 UI |

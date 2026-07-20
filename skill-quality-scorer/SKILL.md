@@ -6,7 +6,6 @@ description: >-
   ClawHub meta-skills (skill-reviewer, skill-quality-audit). Use when scoring, rating, auditing,
   or comparing skills; or says「给技能打分」「技能评分」「和同类 skill 差在哪」「是否符合规范」.
   Runs static_audit.py first; outputs JSON + Markdown. Not TRACE-only.
-disable-model-invocation: true
 ---
 
 # Skill Quality Scorer · 技能质量评分器
@@ -55,7 +54,7 @@ Score portfolio-doctor with TRACE+ — where vs skill-reviewer?
 | A vs B | 两份 JSON + 分差表 + 推荐 |
 | 批量 | 汇总表 + 各 skill 简评 |
 
-评分前先确认输出格式：`JSON`、`Markdown` 或 `两者`。用户跳过格式选择时，默认输出 JSON + Markdown。
+评分前先确认输出格式：`JSON`、`Markdown` 或`两者`。用户未指定时，默认输出 JSON + Markdown。
 
 对比/批量：**同一 rubric v2**，不得换公式或跳过子项。
 
@@ -92,6 +91,6 @@ Score portfolio-doctor with TRACE+ — where vs skill-reviewer?
 | 文件 | 内容 |
 |------|------|
 | [references/scoring-engine-deterministic.md](references/scoring-engine-deterministic.md) | 30 子项 rubric · 公式 · JSON schema |
-| [references/audit-playbook.md](references/audit-playbook.md) | 报告模板 · 对比/批量 · 触发测试 |
+| [references/audit-playbook.md](references/audit-playbook.md) | 技能质量审计方法手册：报告模板 · 对比/批量 · 触发测试 |
 | [examples/sample-score-v2.json](examples/sample-score-v2.json) | JSON 样例 |
 | [scripts/static_audit.py](scripts/static_audit.py) | 静态审计（唯一运行时脚本） |
