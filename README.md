@@ -4,12 +4,12 @@
 
 # 🪑 拍砖间 · HammerRoom Skills
 
-**拍砖间** — 一人董事会 · 竞品调研 · 需求评审模拟器 · 模糊需求接招器 · 技能质量评分器
+**拍砖间** — 一人董事会 · 竞品调研 · 需求评审模拟器 · 需求评审庭 · 模糊需求接招器 · 技能质量评分器
 
 <br/>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-5-22c55e?style=flat-square)](#技能)
+[![Skills](https://img.shields.io/badge/Skills-6-22c55e?style=flat-square)](#技能)
 [![Agent Skills](https://img.shields.io/badge/Agent-Skills-8b5cf6?style=flat-square)](https://agentskills.io)
 <br/>
 [![Claude Code](https://img.shields.io/badge/Claude_Code-✓-d97706?style=flat-square&logo=anthropic&logoColor=white)](https://claude.ai/code)
@@ -25,11 +25,12 @@
 
 | # | 技能 | 说明 | ClawHub |
 |---|------|------|---------|
-| 1 | 🏛️ [**一人董事会（OPC Board）**](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.4.0](https://clawhub.ai/Chris1Wang3/opc-board) |
-| 2 | 🔍 [**竞品调研（CPR）**](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.4](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
-| 3 | ⚔️ [**PM 需求评审模拟器**](#pm-requirement-review-simulator) | 五角色攻防推演 + 存活率报告 | [ClawHub v1.2.6](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
-| 4 | 🧩 [**模糊需求接招器**](#vague-requirement-unpacker) | 模糊指令 -> PM 对齐行动包 | [ClawHub v1.0.0](https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker) |
-| 5 | 📊 [**技能质量评分器**](#skill-quality-scorer) | TRACE+ 六维 30 子项确定性评分 | [ClawHub v1.1.8](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
+| 1 | 🏛️ [**一人董事会（OPC Board）**](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.4.2](https://clawhub.ai/Chris1Wang3/opc-board) |
+| 2 | 🔍 [**竞品调研（CPR）**](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.6](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
+| 3 | ⚔️ [**PM 需求评审模拟器**](#pm-requirement-review-simulator) | 五角色攻防推演 + 存活率报告 | [ClawHub v1.2.8](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
+| 4 | ⚖️ [**需求评审庭（ReviewCourt）**](#reviewcourt) | 会后原话裁决 + 会议与 PRD 双源核对 | [ClawHub v1.0.0](https://clawhub.ai/chris1wang3/skills/reviewcourt) |
+| 5 | 🧩 [**模糊需求接招器**](#vague-requirement-unpacker) | 模糊指令 -> PM 对齐行动包 | [ClawHub v1.0.3](https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker) |
+| 6 | 📊 [**技能质量评分器**](#skill-quality-scorer) | TRACE+ 六维 30 子项确定性评分 | [ClawHub v1.1.9](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
 
 ---
 
@@ -41,11 +42,14 @@
 openclaw skills install opc-board
 openclaw skills install competitive-product-research
 openclaw skills install pm-requirement-review-simulator
+openclaw skills install reviewcourt
 openclaw skills install vague-requirement-unpacker
 openclaw skills install skill-quality-scorer
 ```
 
 或从 [ClawHub · Chris1Wang3](https://clawhub.ai/Chris1Wang3) 安装对应技能包。
+
+**需求评审庭（ReviewCourt）** 也可通过 [ClawHub](https://clawhub.ai/chris1wang3/skills/reviewcourt) 安装：`openclaw skills install @chris1wang3/reviewcourt`。运行依赖腾讯会议官方 CLI [`@tencentcloud/tmeet`](https://www.npmjs.com/package/@tencentcloud/tmeet)（全局安装，勿装进本仓库目录）。
 
 ### Cursor / Claude Code / Codex
 
@@ -70,7 +74,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🏛️ 一人董事会 · OPC Board</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.4.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/opc-board"><img src="https://img.shields.io/badge/ClawHub-v1.4.2-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>朋友说「不错」，AI 说 wonderful idea——你真正需要的是愿意拍砖的人。</strong> 一人董事会召集 5 位专业顾问（技术 / 增长 / 体验 / 商业 / 风险），对一人公司、副业、开源或 SaaS 想法进行<strong>五维 25 子项</strong>确定性压测，输出带公式的可行性评分、Go / Conditional Go / No Go 决策、MoSCoW 范围、Pre-Mortem 风险与行动清单。</p>
@@ -96,7 +100,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🔍 竞品调研 · Competitive Product Research</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.4-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.6-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>竞品分析不应是功能清单堆砌。</strong> 本技能采用原创<strong>双轨四层法</strong>：体验对标（8 大 UX 维度）与战略诊断（SWOT、波特五力、PESTLE）并行；先通过结构化信息采集清单对齐上下文，再生成<strong>证据可溯源</strong>的专业 HTML 报告，含动作建议、责任人、复杂度与证据编号。</p>
@@ -122,15 +126,42 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>⚔️ PM 需求评审模拟器</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator"><img src="https://img.shields.io/badge/ClawHub-v1.2.6-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator"><img src="https://img.shields.io/badge/ClawHub-v1.2.8-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
-<p><strong>评审前预演，比会上挨骂便宜。</strong> 模拟技术、运营、设计、老板、法务五方对 PRD 的攻防挑战；支持<strong>新手 / 实战 / 地狱</strong>三级残酷度；确定性评分引擎逐子项打分，输出带<strong>五维雷达图</strong>的 HTML 存活率报告、神回复话术、RACI 协作包、会议脚本与行动清单。</p>
+<p><strong>评审前预演，比会上挨骂便宜。</strong> 模拟技术、运营、设计、老板、法务五方按统一标准挑战 PRD；确定性评分引擎逐子项打分，输出带<strong>五维雷达图</strong>的 HTML 存活率报告、神回复话术、RACI 协作包、会议脚本与行动清单。</p>
 
 <ul>
 <li>适用：需求评审前压测、跨部门博弈预演、会议资产准备</li>
 <li>输出：专业HTML 需求评审报告</li>
 <li>文档：<a href="pm-requirement-review-simulator/SKILL.md">SKILL.md</a></li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<a id="reviewcourt"></a>
+
+<table width="100%">
+<tr>
+<td valign="top" width="100%">
+
+<h3>⚖️ 需求评审庭 · ReviewCourt</h3>
+
+<p>
+<a href="https://clawhub.ai/chris1wang3/skills/reviewcourt"><img src="https://img.shields.io/badge/ClawHub-v1.0.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<img src="https://img.shields.io/badge/Depends-tmeet_CLI-0ea5e9?style=for-the-badge" alt="tmeet" />
+</p>
+
+<p><strong>会前模拟挨骂，会后还得有人结案。</strong> ReviewCourt 基于腾讯会议官方 <code>tmeet</code> CLI，从智能纪要与<strong>逐段转写原话</strong>建立证据链，给出「通过 / 有条件通过 / 驳回 / 信息不足」评审建议；可对照 PRD 做双源核对，输出阻塞条件、验收标准草案与可追溯证据索引。不替团队拍板，不做员工评价。</p>
+
+<ul>
+<li>适用：会后需求 / PRD / 技术方案评审结案、进入开发前条件清单、会议结论与 PRD 遗漏冲突核对</li>
+<li>输出：Markdown 需求评审裁决单（快速版 / 审计版）</li>
+<li>文档：<a href="reviewcourt/SKILL.md">SKILL.md</a> · <a href="reviewcourt/references/review-playbook.md">需求评审裁决方法手册</a></li>
 </ul>
 
 </td>
@@ -148,7 +179,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🧩 模糊需求接招器 · Vague Requirement Unpacker</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker"><img src="https://img.shields.io/badge/ClawHub-v1.0.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker"><img src="https://img.shields.io/badge/ClawHub-v1.0.3-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>模糊方向，不等于可以直接开写 PRD。</strong> 模糊需求接招器用原创<strong>五层接招法</strong>，把老板/业务的模糊指令拆成意图还原、确认问题、场景收敛、边界骨架、流程状态、接招就绪度和风险红旗，输出能回话、能开会对齐、能继续开写的 PM 行动包。</p>
@@ -174,7 +205,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>📊 技能质量评分器 · Skill Quality Scorer</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/skill-quality-scorer"><img src="https://img.shields.io/badge/ClawHub-v1.1.8-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/skill-quality-scorer"><img src="https://img.shields.io/badge/ClawHub-v1.1.9-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>迭代没方向、发布前没底——你需要的是确定性评分，不是模型随口夸。</strong> 对现有 Agent Skill（SKILL.md）做 <strong>TRACE+ 六维 30 子项</strong>全维审计：先跑 <code>static_audit.py</code> 静态脚本，再按 rubric 逐项 evidence，公式算综合分；支持单技能、A vs B 对比、批量评分，输出 JSON + Markdown 报告。</p>
@@ -202,8 +233,12 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 # 竞品调研
 我们 App 发帖转化率只有 3%，请对标小红书和 Instagram，分析发帖首链路问题。
 
-# 需求评审
+# 需求评审（会前模拟）
 评审一下这个prd：https://www.woshipm.com/evaluating/4069331.html。
+
+# 需求评审庭（会后裁决）
+把今天下午的支付改版需求评审结一下，告诉我能不能进入开发。
+对照这份 PRD，检查昨晚评审会上要求修改的内容有没有漏。
 
 # 模糊需求接招
 老板说：最近新客转化不太好，看看能不能搞点权益激励。我现在只有这句话，帮我先拆成能跟老板确认的问题和方案骨架。
