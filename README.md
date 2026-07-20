@@ -161,7 +161,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <ul>
 <li>适用：会后需求 / PRD / 技术方案评审结案、进入开发前条件清单、会议结论与 PRD 遗漏冲突核对</li>
 <li>输出：Markdown 需求评审裁决单（快速版 / 审计版）</li>
-<li>文档：<a href="reviewcourt/SKILL.md">SKILL.md</a> · <a href="reviewcourt/references/review-playbook.md">需求评审裁决方法手册</a></li>
+<li>文档：<a href="reviewcourt/SKILL.md">SKILL.md</a></li>
 </ul>
 
 </td>

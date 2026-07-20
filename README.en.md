@@ -161,7 +161,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <ul>
 <li>Use cases: post-meeting requirement / PRD / tech-design closeout, pre-dev condition lists, meeting-vs-PRD gap and conflict checks</li>
 <li>Output: Markdown review verdict sheet (quick / audit)</li>
-<li>Docs: <a href="reviewcourt/SKILL.md">SKILL.md</a> · <a href="reviewcourt/references/review-playbook.md">Review Playbook</a></li>
+<li>Docs: <a href="reviewcourt/SKILL.md">SKILL.md</a></li>
 </ul>
 
 </td>
