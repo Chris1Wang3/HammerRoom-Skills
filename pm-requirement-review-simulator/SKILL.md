@@ -1,5 +1,8 @@
 ---
 name: pm-requirement-review-simulator
+slug: pm-requirement-review-simulator
+version: 1.2.8
+displayName: PM 需求评审模拟器
 description: >-
   PRD review stress-test simulator: 5 cross-functional roles challenge your requirements
   and outputs a scored HTML or Markdown survival report with radar chart and meeting script.

@@ -1,5 +1,8 @@
 ---
 name: vague-requirement-unpacker
+slug: vague-requirement-unpacker
+version: 1.0.3
+displayName: 模糊需求接招器 · VRU
 description: >-
   Cold-start unpacker for vague boss/business requirements. Use when the user says
   "老板/业务只给了一个模糊方向", "帮我接一下这个需求", "信息不全先拆一下",

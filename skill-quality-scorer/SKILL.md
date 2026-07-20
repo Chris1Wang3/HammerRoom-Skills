@@ -1,5 +1,8 @@
 ---
 name: skill-quality-scorer
+slug: skill-quality-scorer
+version: 1.1.9
+displayName: 技能质量评分器 · TRACE+
 description: >-
   Deterministic TRACE+ quality scorer for Agent Skills (SKILL.md): six dimensions T-R-F-S-I-E,
   30 sub-items, merges TRACE, good-skill authoring reverse-rubric (Extra08/skill-creator), and

@@ -1,5 +1,8 @@
 ---
 name: opc-board
+slug: opc-board
+version: 1.4.2
+displayName: 一人董事会 · OPC Board
 description: >-
   OPC Board — 5 advisors stress-test your solo idea across 5 dimensions (logic, deliverability, growth, viability, risk), output a scored feasibility report with Go/No-Go decision.
   Use when evaluating a one-person company, side project, solo venture, or open-source project feasibility,

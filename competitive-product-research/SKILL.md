@@ -1,5 +1,8 @@
 ---
 name: competitive-product-research
+slug: competitive-product-research
+version: 1.4.7
+displayName: 竞品调研 · CPR
 description: >-
   Dual-track competitive research: experience benchmarking (8 UX dimensions) + strategic diagnostics (SWOT/Five Forces/PESTLE), source-traceable HTML or Markdown report.
   Use when competitive analysis, benchmarking, differentiation strategy, or when the user says「竞品调研」「对标分析」「和 XX 比差在哪」.
