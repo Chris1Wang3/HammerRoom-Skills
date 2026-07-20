@@ -26,9 +26,9 @@
 | # | 技能 | 说明 | ClawHub |
 |---|------|------|---------|
 | 1 | 🏛️ [**一人董事会（OPC Board）**](#opc-board) | 五维压测一人公司 / 副业想法可行性 | [ClawHub v1.4.2](https://clawhub.ai/Chris1Wang3/opc-board) |
-| 2 | 🔍 [**竞品调研（CPR）**](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.6](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
+| 2 | 🔍 [**竞品调研（CPR）**](#competitive-product-research) | 双轨四层法：体验对标 + 战略诊断 | [ClawHub v1.4.7](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
 | 3 | ⚔️ [**PM 需求评审模拟器**](#pm-requirement-review-simulator) | 五角色攻防推演 + 存活率报告 | [ClawHub v1.2.8](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
-| 4 | ⚖️ [**需求评审庭（ReviewCourt）**](#reviewcourt) | 会后原话裁决 + 会议与 PRD 双源核对 | [ClawHub v1.0.0](https://clawhub.ai/chris1wang3/skills/reviewcourt) |
+| 4 | ⚖️ [**需求评审庭（ReviewCourt）**](#reviewcourt) | 会后原话裁决 + 会议与 PRD 双源核对 | [ClawHub v1.0.1](https://clawhub.ai/chris1wang3/skills/reviewcourt) |
 | 5 | 🧩 [**模糊需求接招器**](#vague-requirement-unpacker) | 模糊指令 -> PM 对齐行动包 | [ClawHub v1.0.3](https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker) |
 | 6 | 📊 [**技能质量评分器**](#skill-quality-scorer) | TRACE+ 六维 30 子项确定性评分 | [ClawHub v1.1.9](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
 
@@ -100,7 +100,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🔍 竞品调研 · Competitive Product Research</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.6-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.7-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>竞品分析不应是功能清单堆砌。</strong> 本技能采用原创<strong>双轨四层法</strong>：体验对标（8 大 UX 维度）与战略诊断（SWOT、波特五力、PESTLE）并行；先通过结构化信息采集清单对齐上下文，再生成<strong>证据可溯源</strong>的专业 HTML 报告，含动作建议、责任人、复杂度与证据编号。</p>
@@ -152,7 +152,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>⚖️ 需求评审庭 · ReviewCourt</h3>
 
 <p>
-<a href="https://clawhub.ai/chris1wang3/skills/reviewcourt"><img src="https://img.shields.io/badge/ClawHub-v1.0.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/chris1wang3/skills/reviewcourt"><img src="https://img.shields.io/badge/ClawHub-v1.0.1-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 <img src="https://img.shields.io/badge/Depends-tmeet_CLI-0ea5e9?style=for-the-badge" alt="tmeet" />
 </p>
 

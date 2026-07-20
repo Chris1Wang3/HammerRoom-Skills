@@ -26,9 +26,9 @@
 | # | Skill | Summary | ClawHub |
 |---|-------|---------|---------|
 | 1 | 🏛️ [**OPC Board**](#opc-board) | Five-dimension stress-test for solo business ideas | [ClawHub v1.4.2](https://clawhub.ai/Chris1Wang3/opc-board) |
-| 2 | 🔍 [**Competitive Product Research**](#competitive-product-research) | Dual-track benchmarking + strategic diagnostics | [ClawHub v1.4.6](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
+| 2 | 🔍 [**Competitive Product Research**](#competitive-product-research) | Dual-track benchmarking + strategic diagnostics | [ClawHub v1.4.7](https://clawhub.ai/Chris1Wang3/competitive-product-research) |
 | 3 | ⚔️ [**PM Requirement Review Simulator**](#pm-requirement-review-simulator) | Five-role PRD review with survival scoring | [ClawHub v1.2.8](https://clawhub.ai/Chris1Wang3/pm-requirement-review-simulator) |
-| 4 | ⚖️ [**ReviewCourt**](#reviewcourt) | Post-meeting verdict from transcript evidence + PRD cross-check | [ClawHub v1.0.0](https://clawhub.ai/chris1wang3/skills/reviewcourt) |
+| 4 | ⚖️ [**ReviewCourt**](#reviewcourt) | Post-meeting verdict from transcript evidence + PRD cross-check | [ClawHub v1.0.1](https://clawhub.ai/chris1wang3/skills/reviewcourt) |
 | 5 | 🧩 [**Vague Requirement Unpacker**](#vague-requirement-unpacker) | Vague ask -> PM alignment pack | [ClawHub v1.0.3](https://clawhub.ai/Chris1Wang3/vague-requirement-unpacker) |
 | 6 | 📊 [**Skill Quality Scorer**](#skill-quality-scorer) | TRACE+ six-dimension deterministic scoring | [ClawHub v1.1.9](https://clawhub.ai/Chris1Wang3/skill-quality-scorer) |
 
@@ -100,7 +100,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>🔍 Competitive Product Research</h3>
 
 <p>
-<a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.6-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/Chris1Wang3/competitive-product-research"><img src="https://img.shields.io/badge/ClawHub-v1.4.7-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 </p>
 
 <p><strong>Competitive analysis should not be a feature checklist.</strong> This skill uses an original <strong>dual-track four-layer method</strong>: experience benchmarking (8 UX dimensions) and strategic diagnostics (SWOT, Porter's Five Forces, PESTLE) in parallel; a structured intake checklist aligns context first, then produces a <strong>source-traceable</strong> professional HTML report with actions, owners, complexity, and evidence IDs.</p>
@@ -152,7 +152,7 @@ git clone https://github.com/Chris1Wang3/HammerRoom-Skills.git
 <h3>⚖️ ReviewCourt</h3>
 
 <p>
-<a href="https://clawhub.ai/chris1wang3/skills/reviewcourt"><img src="https://img.shields.io/badge/ClawHub-v1.0.0-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
+<a href="https://clawhub.ai/chris1wang3/skills/reviewcourt"><img src="https://img.shields.io/badge/ClawHub-v1.0.1-ff69b4?style=for-the-badge" alt="ClawHub" /></a>
 <img src="https://img.shields.io/badge/Depends-tmeet_CLI-0ea5e9?style=for-the-badge" alt="tmeet" />
 </p>
 
